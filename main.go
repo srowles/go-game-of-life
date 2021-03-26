@@ -45,13 +45,28 @@ func main() {
 func render(gol *gol.Life) {
 	termbox.Clear(defaultColor, defaultColor)
 
+	// borders of game
+	for y := 1; y < gol.Height()+2; y++ {
+		termbox.SetCell(0, y, '║', termbox.ColorBlue, bgColor)
+		termbox.SetCell(gol.Width()+2, y, '║', termbox.ColorBlue, bgColor)
+	}
+	for x := 1; x < gol.Width()+2; x++ {
+		termbox.SetCell(x, 0, '═', termbox.ColorBlue, bgColor)
+		termbox.SetCell(x, gol.Height()+2, '═', termbox.ColorBlue, bgColor)
+	}
+	termbox.SetCell(0, 0, '╔', termbox.ColorBlue, bgColor)
+	termbox.SetCell(gol.Width()+2, 0, '╗', termbox.ColorBlue, bgColor)
+	termbox.SetCell(0, gol.Height()+2, '╚', termbox.ColorBlue, bgColor)
+	termbox.SetCell(gol.Width()+2, gol.Height()+2, '╝', termbox.ColorBlue, bgColor)
+
+	// actual game
 	for y := 0; y < gol.Height(); y++ {
 		for x := 0; x < gol.Width(); x++ {
 			b := ' '
 			if gol.Get(x, y) {
 				b = '*'
 			}
-			termbox.SetCell(x, y, b, termbox.ColorGreen, bgColor)
+			termbox.SetCell(x+1, y+1, b, termbox.ColorGreen, bgColor)
 		}
 	}
 
