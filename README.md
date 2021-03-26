@@ -12,7 +12,19 @@ You start with a two dimensional grid of cells, where each cell is either alive 
 
 Your job is to implement the rules above, with tests, and the play with the result.
 
-There is a simple main that can be used to run and display the game of line in a terminal. This relies on `github.com/nsf/termbox-go` so make sure you run `go get` before running the exercise.
+There is a simple main that can be used to run and display the game of line in a terminal using `github.com/nsf/termbox-go`
+
+Run the game using the commands below. Press escape to exit.
+
+```
+go run main.go
+```
+
+To start with a simple glider which will move across the grid, you can use
+```
+go run main.go -glider
+```
+
 
 Some life examples:
 
@@ -22,7 +34,7 @@ Stable life, doesn't change
 **
 ```
 
-Changes then becomes stable
+Starting life thatc hanges then becomes stable
 ```
 ***
 *
@@ -43,7 +55,7 @@ Changes then becomes stable
  **
 ```
 
-Changes then Dies
+Starting life that changes then does off
 ```
 *
  ***

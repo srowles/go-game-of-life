@@ -3,31 +3,33 @@ package gol
 
 // Life stores the state of a round of Conway's Game of Life.
 type Life struct {
-	w, h int
+	width  int
+	height int
 }
 
 // NewLife returns a new Life game state with a random initial state.
-func NewLife(w, h int) *Life {
+func NewLife(width int, height int) *Life {
 	return &Life{
-		w: w, h: h,
+		width:  width,
+		height: height,
 	}
 }
 
 func (l *Life) Height() int {
-	return l.h
+	return l.height
 }
 
 func (l *Life) Width() int {
-	return l.w
+	return l.width
 }
 
-func (l *Life) Set(x, y int, b bool) {
-	// TODO set specified coords to contain a cell
+func (l *Life) Set(x, y int, alive bool) {
+	// TODO implement me
 }
 
-func (l *Life) RuneFor(x, y int) rune {
-	// TODO return correct rune
-	return ' '
+func (l *Life) Get(x, y int) bool {
+	// TODO implement me
+	return false
 }
 
 // Step advances the game by one instant, recomputing and updating all cells.
