@@ -1,0 +1,5 @@
+# github.com/mattn/go-runewidth v0.0.9
+github.com/mattn/go-runewidth
+# github.com/nsf/termbox-go v1.1.0
+## explicit
+github.com/nsf/termbox-go

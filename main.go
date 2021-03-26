@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"os"
 	"time"
 
@@ -15,7 +16,18 @@ const (
 )
 
 func main() {
-	gol := gol.NewLife(40, 15)
+	var glider bool
+	flag.BoolVar(&glider, "glider", false, "start wit a single glider")
+	flag.Parse()
+
+	gol := gol.NewLife(60, 20)
+	if glider {
+		gol.Set(10, 10, true)
+		gol.Set(11, 10, true)
+		gol.Set(12, 10, true)
+		gol.Set(10, 11, true)
+		gol.Set(11, 12, true)
+	}
 	termbox.Init()
 	termbox.SetOutputMode(termbox.Output256)
 	defer termbox.Close()

@@ -21,6 +21,10 @@ func (l *Life) Width() int {
 	return l.w
 }
 
+func (l *Life) Set(x, y int, b bool) {
+	// TODO set specified coords to contain a cell
+}
+
 func (l *Life) RuneFor(x, y int) rune {
 	// TODO return correct rune
 	return ' '

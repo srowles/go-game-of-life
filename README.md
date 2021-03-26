@@ -12,6 +12,8 @@ You start with a two dimensional grid of cells, where each cell is either alive 
 
 Your job is to implement the rules above, with tests, and the play with the result.
 
+There is a simple main that can be used to run and display the game of line in a terminal. This relies on `github.com/nsf/termbox-go` so make sure you run `go get` before running the exercise.
+
 Some life examples:
 
 Stable life, doesn't change
