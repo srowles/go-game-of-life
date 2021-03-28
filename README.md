@@ -12,7 +12,7 @@ You start with a two dimensional grid of cells, where each cell is either alive 
    3. Any live cell with two or three live neighbours lives on to the next generation.
    4. Any dead cell with exactly three live neighbours becomes a live cell.
 
-Your job is to implement the rules above, with tests, and the play with the result. For dealing with the edges you have 2 choices, either wrap the board, or assume that no life can exist outside of the board.
+Your job is to implement the rules above, with tests, and the play with the result. Assume that the edge of the board is a hard edge with no life beyond.
 
 **Don't forget to write some tests :)**
 
@@ -89,3 +89,17 @@ There are `-width` and `-height` options, with defaults, to allow the game size 
 ```
 Death
 ```
+
+## Extensions
+
+### Refactoring
+
+Can you refactor the code to make it as clean as possible? Try alternative options for calculations etc.
+
+### Wrapping game area
+
+If you have the game working for a static game area, try allowing the game to wrap around the top/bottom and left/right sides.
+
+### Alternative rendering
+
+If you complete this quickly, because you have experience with Game Of Life, then try writing an alternative rendering engine, try https://ebiten.org/ which is a very simple game engine and will allow drawing of graphics.
