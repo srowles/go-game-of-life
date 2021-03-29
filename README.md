@@ -5,7 +5,7 @@ testing and code implementation
 
 http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
-You start with a two dimensional grid of cells, where each cell is either alive or dead. When calcuating the next generation of the grid, follow these rules:
+You start with a two dimensional grid of cells, where each cell is either alive or dead. When calcuating the next generation of the grid, follow these rules (NB a neighbour includes diagonals):
 
    1. Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
    2. Any live cell with more than three live neighbours dies, as if by overcrowding.
