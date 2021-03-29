@@ -44,50 +44,16 @@ There are `-width` and `-height` options, with defaults, to allow the game size 
 
 ### Starting life thatc hanges then becomes stable
 ```
-***
-*
-```
-```
- *
-**
-*
-```
-```
-**
-**
-**
-```
-```
- ** 
-*  *
- **
+***   *   **    **
+*    **   **   *  *
+     *    **    **
 ```
 
-### Starting life that changes then does off
+### Starting life that changes then dies off
 ```
-*
- ***
-```
-```
-**
-**
- *
-```
-```
-**
-  *
-**
-```
-```
-*
- *
-*
-```
-```
-**
-```
-```
-Death
+*     **   **    *    **
+ ***  **     *    *   
+       *   **    *
 ```
 
 ## Extensions
@@ -103,3 +69,5 @@ If you have the game working for a static game area, try allowing the game to wr
 ### Alternative rendering
 
 If you complete this quickly, because you have experience with Game Of Life, then try writing an alternative rendering engine, try https://ebiten.org/ which is a very simple game engine and will allow drawing of graphics.
+
+Or use Fyne https://github.com/fyne-io/life/blob/main/main.go this is their game of life example, but you should use your own game of life implementation.
