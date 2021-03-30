@@ -36,6 +36,8 @@ func (t *Terminal) Run() {
 	go listenToKeyboard()
 
 	t.render()
+	// Pause to appreciate initial state
+	<-time.After(2 * time.Second)
 	ticker := time.NewTicker(time.Millisecond * 150)
 	for range ticker.C {
 		t.render()
