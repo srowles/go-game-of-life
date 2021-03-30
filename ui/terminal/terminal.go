@@ -35,6 +35,7 @@ func (t *Terminal) Run() {
 	termbox.SetOutputMode(termbox.Output256)
 	defer termbox.Close()
 
+	t.render()
 	ticker := time.NewTicker(time.Millisecond * 150)
 	for range ticker.C {
 		t.render()
