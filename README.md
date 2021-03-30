@@ -26,11 +26,6 @@ Run the game using the commands below. Press escape to exit.
 go run main.go
 ```
 
-To start with a simple glider which will move across the grid, you can use
-```
-go run main.go -glider
-```
-
 There are `-width` and `-height` options, with defaults, to allow the game size to change.
 
 

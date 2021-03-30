@@ -29,11 +29,11 @@ func New(game ui.GameOfLife) *Terminal {
 
 // Run starts the rendering and steps the game
 func (t *Terminal) Run() {
-	go listenToKeyboard()
 
 	termbox.Init()
 	termbox.SetOutputMode(termbox.Output256)
 	defer termbox.Close()
+	go listenToKeyboard()
 
 	t.render()
 	ticker := time.NewTicker(time.Millisecond * 150)
