@@ -28,6 +28,9 @@ go run main.go
 
 There are `-width` and `-height` options, with defaults, to allow the game size to change.
 
+It should look like this when started
+
+![alt text](output.png "Initial starting render of the game of life")
 
 ## Some life examples:
 
