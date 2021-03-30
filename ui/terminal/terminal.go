@@ -94,7 +94,7 @@ func (t *Terminal) render() {
 }
 
 func (t *Terminal) displayGeneration() {
-	output := fmt.Sprintf("Generation: %d", t.generation)
+	output := fmt.Sprintf("Generation: %d     ", t.generation)
 	for x, r := range output {
 		termbox.SetCell(x, t.game.Height()+3, r, termbox.ColorGreen, bgColor)
 	}
