@@ -34,16 +34,17 @@ func main() {
 	gol.Set(32, 10, true)
 	gol.Set(30, 11, true)
 
-	//
+	// shape that morphs then becomes stable
+	gol.Set(51, 7, true)
+	gol.Set(49, 8, true)
 	gol.Set(50, 8, true)
-	gol.Set(51, 8, true)
+	gol.Set(52, 8, true)
 	gol.Set(53, 8, true)
-	gol.Set(54, 8, true)
-	gol.Set(51, 9, true)
-	gol.Set(53, 9, true)
-	gol.Set(51, 10, true)
-	gol.Set(53, 10, true)
-	gol.Set(52, 11, true)
+	gol.Set(50, 9, true)
+	gol.Set(52, 9, true)
+	gol.Set(50, 10, true)
+	gol.Set(52, 10, true)
+	gol.Set(51, 11, true)
 
 	ui := terminal.New(gol)
 	ui.Run()
